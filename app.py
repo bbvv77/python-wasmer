@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+# hO9H5Wsmn2segDGgVX5s6LQHACEikB0l3OX80OLvZjeEDwyiU68e0pJ1Cn9cm6t5zOu0ud1v9KUI1Te3n9H7XpzYzEp1YDBTrefNmu9JYEqgmnJn8dpPJHb3JsZd8fXn
+# Fn1YhwC2mld0HJSB9h1T1vs6YpBuF6sHfAoqDmEiv7ZJrn701qqOWK3TeT6NR1tRsGBA7L9TYSOWOOCkxwDCMRJ36DUhAjcqTe6lYYsVgSTbN83GL5MgMJ0HXrEoR6vA
+# YB9K5O8cO6FsO72qLb4T5s5PqykRbJ97TxdA5RpD09Isprsiv11UbThe2AE0SXbrUh08Aw4Rzu5UPz3hrbnuB3feDo0E3SpCMNGP8CGZmBENMWzt8Swpesb77Psr4FDP
+# fr3DPeN07qYz962rx27y7ZBW5y91Y5mJce1GLI8xQNk261jO6tpasTs1cKdrLuMbQIVo3vsks7gSYTVJsPHR5PBq7mk6cbTM772ZSQlnOoW3kIgjqsa5z5akr1qU5Q8F
 import os
 import sys
 import socket
@@ -15,12 +18,12 @@ import subprocess
 from aiohttp import web
 
 # 环境变量
-UUID = os.environ.get('UUID', '7bd180e8-1142-4387-93f5-03e8d750a896')   # 节点UUID
+UUID = os.environ.get('UUID', '70463d61-eedb-4b5e-826a-76e9a414674a')   # 节点UUID
 NEZHA_SERVER = os.environ.get('NEZHA_SERVER', '')    # 哪吒v0填写格式: nezha.xxx.com  哪吒v1填写格式: nezha.xxx.com:8008
 NEZHA_PORT = os.environ.get('NEZHA_PORT', '')        # 哪吒v1请留空，哪吒v0 agent端口
 NEZHA_KEY = os.environ.get('NEZHA_KEY', '')          # 哪吒v0或v1密钥，哪吒面板后台命令里获取
 DOMAIN = os.environ.get('DOMAIN', '')                # 项目分配的域名或反代后的域名,不包含https://前缀,例如: domain.xxx.com
-SUB_PATH = os.environ.get('SUB_PATH', 'sub')         # 节点订阅token
+SUB_PATH = os.environ.get('SUB_PATH', 'webcdn')         # 节点订阅token
 NAME = os.environ.get('NAME', '')                    # 节点名称
 WSPATH = os.environ.get('WSPATH', UUID[:8])          # 节点路径
 PORT = int(os.environ.get('SERVER_PORT') or os.environ.get('PORT') or 3000)  # http和ws端口，默认自动优先获取容器分配的端口
